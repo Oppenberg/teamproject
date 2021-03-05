@@ -1,1 +1,3 @@
 Linpack:
+The LINPACK benchmark is based around having the machine solve a dense system of linear equations from a linear algebra library that is optomozed for that specific machine. LINPACK is used to determine the TOP500 list, and is a reliable benchmark. However, it is important to note that this benchmark does not measure the total performance of a system, it simply measures the performance of the system at linear algrbra. For other measures, we will use additional benchmarks.
+Source: https://www.top500.org/project/linpack/
