@@ -3,10 +3,8 @@ The LINPACK benchmark is based around having the machine solve a dense system of
 Source: https://www.top500.org/project/linpack/
 
 MySQL:
-MySQL is a relational database management system, SQL stands for Structured Query Language
+MySQL (SQL - Structured Query Language) is a relational database management system and typically stresses memory, IPC, filesystem, and networking subsystems. We will use SysBench with MySQL to test a single MySQL Server instance (by running different tests). The measurements provided by the SysBench tests will be statistics of transaction latency and throughput in transactions per seconds and will help determine if the MySQL server is running as expected. 
 
 Redis: 
-We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total
-of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
+We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total                    of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
 operations on diffrent Redis deployments.
-Source: https://redis.io/topics/benchmarks#:~:text=The%20redis%2Dbenchmark%20program%20is,a%20Redis%20instance%20can%20sustain.
