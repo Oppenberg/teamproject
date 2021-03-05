@@ -6,5 +6,7 @@ MySQL:
 MySQL is a relational database management system, SQL stands for Structured Query Language
 
 Redis: 
-We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total                    of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
+We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total
+of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
 operations on diffrent Redis deployments.
+Source: https://redis.io/topics/benchmarks#:~:text=The%20redis%2Dbenchmark%20program%20is,a%20Redis%20instance%20can%20sustain.
