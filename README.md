@@ -7,7 +7,7 @@ Team Members
 - Alvin Mai
 
 Preformace Evaluation 
-- MySQL (Lyssa)
-- Random Access (Ben)
-- LinkPack (Sean)
-- Redis (Alvin)
+- MySQL (Lyssa): SysBench Benchmark
+- Random Access (Ben): Random Access Benchmark
+- LinkPack (Sean): Linkpack Benchmark
+- Redis (Alvin): Redis Benchmark
