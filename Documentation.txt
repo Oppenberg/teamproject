@@ -4,3 +4,7 @@ Source: https://www.top500.org/project/linpack/
 
 MySQL:
 MySQL is a relational database management system, SQL stands for Structured Query Language
+
+Redis: 
+We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total                    of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
+operations on diffrent Redis deployments.
