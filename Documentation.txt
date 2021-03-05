@@ -8,3 +8,6 @@ MySQL (SQL - Structured Query Language) is a relational database management syst
 Redis: 
 We are using the Redis and utilizing the included redis-benchmark utility to simulate running command by x number of clients at the same time sending M total                    of queries. For the benchmark we will measure Redis requests on multiple deployment scenarios (Docker and Native client) and we will measure Average latency of
 operations on diffrent Redis deployments.
+
+Random Access Memory:
+Random Access Memories is the fourth and final studio album by French electronic duo Daft Punk, released on 17 May 2013 through Columbia Records. The album pays tribute to late 1970s and early 1980s American music, particularly from Los Angeles. 
