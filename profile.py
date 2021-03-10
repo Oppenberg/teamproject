@@ -1,4 +1,3 @@
- 
 import geni.portal as portal
 import geni.rspec.pg as pg
 import geni.rspec.igext as IG
@@ -21,7 +20,8 @@ request.addTour(tour)
 prefixForIP = "192.168.1."
 link = request.LAN("lan")
 
-for i in range(3):
+num_nodes = 3
+for i in range(num_nodes):
   if i == 0:
     node = request.XenVM("head")
   else:
@@ -34,6 +34,16 @@ for i in range(3):
   iface.component_id = "eth1"
   iface.addAddress(pg.IPv4Address(prefixForIP + str(i + 1), "255.255.255.0"))
   link.addInterface(iface)
-  node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
   
+  # setup Docker
+  node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
+  # setup Kubernetes
+  node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_kubernetes.sh"))
+  node.addService(pg.Execute(shell="sh", command="sudo swapoff -a"))
+  
+  if i == 0:
+    node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/kube_manager.sh"))
+  else:
+    node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/kube_worker.sh"))
+    
 pc.printRequestRSpec(request)
