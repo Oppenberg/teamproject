@@ -16,7 +16,7 @@ Contents of the compressed intel file: https://www.smcm.iqfr.csic.es/docs/intel/
 In the mean time we can execute a Docker file from 0x000edd1e (https://hub.docker.com/r/0x000edd1e/linpack) this is a docker file that runs the linpack benchmark on the system. 
 We can instantiate the LINPACK in the cloudlab profile to run this. When we ssh into the head we can just utilize "docker pull 0x000edd1e/linpack" command to setup the
 instance and use the "docker run -it --rm 0x000edd1e/linpack" to run the default to get the KFLOPS results from the benchmark. Just as a heads up the default array is 200 x 200
-And that takes ups 31kb of ram. In Linpack profile i have it setup to 32gb of ram per node, With 32gb of ram per node we can get up to 1800 x 1800 array. 
+And that takes ups 31kb of ram. In Linpack profile i have it setup to 32gb of ram per node, With 32gb of ram per node we can get up to 1800 x 1800 array. The Core count is change to 12 also (Max). 
 
 This initial update is to let you guys know that we can run the benchmarks from thtat docker file from 0x000edd1e. That docker file/profile is getting the results we need. 
 I have spent the whole day wraping my head around this topic and i just need some time to figure things out and write/rewirte the bash scripts we need to have to measure
