@@ -14,13 +14,13 @@ the Makefile also has the header and supporting utilis that we will need for tha
 
 
 What i am working on next:
-- [] Streamlining the process for running this benchmark
-- [] Editing the run scripts (linux.sh, vm.sh) to reflect what we are doing
-- [] edit the do_it.sh script to run, currently that script will run the benchmark 10 times but we need to foucs that
-- [] TRANSFER THIS BENCHMARK TO REAL_PC WE ARE USING NODES WITH LIMITED RESOUCES, WE ARE BEING BOTTLENECKED 
-- [] work on real_pc variant 
-- [] The do_it.sh script is funky and i need to rekit. 
-- [] rework the print result functionality to the results dir 
-- [] modify and understand numactl and its attachemnt of cores to benchmark 
+- [ ] Streamlining the process for running this benchmark
+- [ ] Editing the run scripts (linux.sh, vm.sh) to reflect what we are doing
+- [ ] edit the do_it.sh script to run, currently that script will run the benchmark 10 times but we need to foucs that
+- [ ] TRANSFER THIS BENCHMARK TO REAL_PC WE ARE USING NODES WITH LIMITED RESOUCES, WE ARE BEING BOTTLENECKED 
+- [ ] work on real_pc variant 
+- [ ] The do_it.sh script is funky and i need to rekit. 
+- [ ] rework the print result functionality to the results dir 
+- [ ] modify and understand numactl and its attachemnt of cores to benchmark 
 
 
