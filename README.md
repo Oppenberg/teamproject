@@ -26,6 +26,9 @@ Recap:
 - use "numactl --physcpubind=0-11 --localalloc ./bin/stream.exe" to run one instance of stream benchmark 
 - for later updates, the do_it.sh, docker file and streamlineing will be done
 
+![image](https://user-images.githubusercontent.com/46765712/113948103-20917380-97da-11eb-8e09-d892ffcaec07.png)
+
+
 
 What i am working on next:
 - [ ] Streamlining the process for running this benchmark
