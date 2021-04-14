@@ -20,6 +20,7 @@ node = request.RawPC("node")
 # Request that a specific image be installed on this node
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD";
 
-# Install and execute scripts on the node. THIS TAR FILE DOES NOT ACTUALLY EXIST!
-node.addService(rspec.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
+# Install and execute scripts on the node. 
+node.addService(rspec.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh")) # Installs docker
+node.addService(rspec.Execute(shell="sudo -i", command="apt install numactl"))
 portal.context.printRequestRSpec()
