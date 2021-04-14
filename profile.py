@@ -1,41 +1,46 @@
- 
-import geni.portal as portal
-import geni.rspec.pg as pg
-import geni.rspec.igext as IG
+"""This profile allocates two bare metal nodes and connects them directly together via a layer1 link. 
 
+Instructions:
+Click on any node in the topology and choose the `shell` menu item. When your shell window appears, use `ping` to test the link."""
+
+# Import the Portal object.
+import geni.portal as portal
+# Import the ProtoGENI library.
+import geni.rspec.pg as pg
+# Import the Emulab specific extensions.
+import geni.rspec.emulab as emulab
+
+# Create a portal context.
 pc = portal.Context()
+
+# Create a Request object to start building the RSpec.
 request = pc.makeRequestRSpec()
 
-tourDescription = \
-"""
-This profile provides the template for a compute node with Docker installed on Ubuntu 18.04
-"""
+# Do not run snmpit
+#request.skipVlans()
 
-#
-# Setup the Tour info with the above description and instructions.
-#  
-tour = IG.Tour()
-tour.Description(IG.Tour.TEXT,tourDescription)
-request.addTour(tour)
+# Add a raw PC to the request and give it an interface.
+node1 = request.RawPC("node1")
+# Must use UBUNTU18 to utilize layer 1 links.
+node1.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD"
+iface1 = node1.addInterface()
 
-prefixForIP = "192.168.1."
-link = request.LAN("lan")
-def Node( name, public ):
-    if params.raw:
-        return RSpec.RawPC( name )
-    else:
-        vm = geni.rspec.igext.XenVM( name )
-        vm.ram = params.mem
-        if public:
-            vm.routable_control_ip = True
-        return vm
+# Specify the IPv4 address
+iface1.addAddress(pg.IPv4Address("192.168.1.1", "255.255.255.0"))
 
-  node.routable_control_ip = "true" 
-  node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD"
-  iface = node.addInterface("if" + str(i))
-  iface.component_id = "eth1"
-  iface.addAddress(pg.IPv4Address(prefixForIP + str(i + 1), "255.255.255.0"))
-  link.addInterface(iface)
-  node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
-  
+# Add another raw PC to the request and give it an interface.
+node2 = request.RawPC("node2")
+# Must use UBUNTU18 to utilize layer 1 links.
+node2.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD"
+iface2 = node2.addInterface()
+
+# Specify the IPv4 address
+iface2.addAddress(pg.IPv4Address("192.168.1.2", "255.255.255.0"))
+
+# Add L1 link from node1 to node2
+link1 = request.L1Link("link1")
+link1.addInterface(iface1)
+link1.addInterface(iface2)
+
+# Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
