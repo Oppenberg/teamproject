@@ -20,14 +20,16 @@ request.addTour(tour)
 
 prefixForIP = "192.168.1."
 link = request.LAN("lan")
+def Node( name, public ):
+    if params.raw:
+        return RSpec.RawPC( name )
+    else:
+        vm = geni.rspec.igext.XenVM( name )
+        vm.ram = params.mem
+        if public:
+            vm.routable_control_ip = True
+        return vm
 
-for i in range(3):
-  if i == 0:
-    node = request.XenVM("head")
-  else:
-    node = request.XenVM("worker-" + str(i))
-  node.cores = 12
-  node.ram = 32000
   node.routable_control_ip = "true" 
   node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD"
   iface = node.addInterface("if" + str(i))
