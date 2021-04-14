@@ -20,11 +20,6 @@ node = request.RawPC("node")
 # Request that a specific image be installed on this node
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD";
 
-iface = node.addInterface("if" + str(i))
-iface.component_id = "eth1"
-iface.addAddress(pg.IPv4Address(prefixForIP + str(i + 1), "255.255.255.0"))
-link.addInterface(iface)
-
 # Install and execute scripts on the node. THIS TAR FILE DOES NOT ACTUALLY EXIST!
 node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
 
