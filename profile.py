@@ -22,5 +22,5 @@ node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD
 
 # Install and execute scripts on the node. 
 node.addService(rspec.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh")) # Installs docker
-node.addService(rspec.Execute(shell="sudo -i", command="apt install numactl"))
+node.addService(rspec.Execute(shell="sh", command="apt install numactl"))
 portal.context.printRequestRSpec()
