@@ -9,5 +9,5 @@ Team Members
 Preformace Evaluation 
 - MySQL (Lyssa): SysBench Benchmark
 - Random Access (Ben): Random Access Benchmark
-- LinkPack (Sean): Linkpack Benchmark
+- LinkPack (Alvin): Linkpack Benchmark
 - Redis (Alvin): Redis Benchmark
