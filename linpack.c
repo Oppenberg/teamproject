@@ -98,7 +98,7 @@ int main(void)
         printf("Machine precision:  %d digits.\n",BASE10DIG);
         printf("Array size %d X %d.\n",arsize,arsize);
         printf("Average rolled and unrolled performance:\n\n");
-        printf("    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS\n");
+        printf("    Reps Time(s) DGEFA   DGESL  OVERHEAD    GFLOPS\n");
         printf("----------------------------------------------------\n");
         nreps=1;
         while (linpack(nreps,arsize)<10.)
@@ -112,7 +112,7 @@ static REAL linpack(long nreps,int arsize)
 
     {
     REAL  *a,*b;
-    REAL   norma,t1,kflops,tdgesl,tdgefa,totalt,toverhead,ops;
+    REAL   norma,t1,Gflops,tdgesl,tdgefa,totalt,toverhead,ops;
     int   *ipvt,n,info,lda;
     long   i,arsize2d;
 
@@ -149,7 +149,7 @@ static REAL linpack(long nreps,int arsize)
     totalt=second()-totalt;
     if (totalt<0.5 || tdgefa+tdgesl<0.2)
         return(0.);
-    kflops=2.*nreps*ops/(1000.*(tdgefa+tdgesl));
+    Gflops=2.*nreps*ops/(1000000.*(tdgefa+tdgesl));
     toverhead=totalt-tdgefa-tdgesl;
     if (tdgefa<0.)
         tdgefa=0.;
@@ -160,7 +160,7 @@ static REAL linpack(long nreps,int arsize)
     printf("%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f\n",
             nreps,totalt,100.*tdgefa/totalt,
             100.*tdgesl/totalt,100.*toverhead/totalt,
-            kflops);
+            Gflops);
     return(totalt);
     }
 
