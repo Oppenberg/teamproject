@@ -14,6 +14,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 sudo apt-get install -y httping
 sudo apt-get install -y jq
+suod apt-get install numactl
 
 # the username needs to be changed
 while IFS= read -r line; do
