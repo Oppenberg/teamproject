@@ -34,7 +34,7 @@ What i am working on next:
 
 
 **4/15: Alvin M** 
-![image](https://user-images.githubusercontent.com/46765712/114950754-bbfd9680-9e21-11eb-8a38-331c309bbd50.png)
+
 Since the last update, we transitiond into a proper run of the benchmark. originaly we utilized 0x00edd1e's docker variant of the linpack benchmark. The edd1e benchmark was 
 acceptable but the issue was that it calcualted data in KFLOPS, we need our measurement in GFLOPS. since that was the case, i have spent this time modifying the original 
 files and was able to sucessfully redo the original benchmark. As you can see in this branch we have trimmed alot of files from the last update.  I created a file that holds 
@@ -58,3 +58,4 @@ TLDR:
 What i hope to finish by 4/22
 - Create the docker file for this benchmark 
 - create and run a docker image of this experment 
+![image](https://user-images.githubusercontent.com/46765712/114950754-bbfd9680-9e21-11eb-8a38-331c309bbd50.png)
