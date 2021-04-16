@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir users/Am943807/linpack
+mkdir /users/Am943807/linpack
 mv /local/repository/* /users/Am943807/linpack
 
 sudo apt-get update
