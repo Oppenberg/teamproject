@@ -36,3 +36,6 @@ What i am working on next:
 **Sample of 0x000edd1e's Linpack docker:**
 
 ![unknown](https://user-images.githubusercontent.com/46765712/113368265-4d521080-932c-11eb-9ada-81a9477be75b.png)
+- mkdir linpack
+- chmod +x /local/repository/install_enableUtil.sh
+- sudo bash /local/repository/install_enableUtil.sh
