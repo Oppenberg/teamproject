@@ -60,9 +60,6 @@ What i hope to finish by 4/22
 - create and run a docker image of this experment 
 - 
 ![image](https://user-images.githubusercontent.com/46765712/114950754-bbfd9680-9e21-11eb-8a38-331c309bbd50.png)
-
-
-- **Running Linpack benchmark **
 ![image](https://user-images.githubusercontent.com/46765712/114968536-8b7b2400-9e44-11eb-963d-56d9128e446d.png)
 ![image](https://user-images.githubusercontent.com/46765712/114971805-237c0c00-9e4b-11eb-868e-de8ac1e9e2c4.png)
 
