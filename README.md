@@ -28,14 +28,33 @@ What i am working on next:
  - Rewriting the test scripts and docker file for our own purposes 
 
 
-
-
-
-![image](https://user-images.githubusercontent.com/46765712/114950754-bbfd9680-9e21-11eb-8a38-331c309bbd50.png)
-
 **Sample of 0x000edd1e's Linpack docker:**
 
 ![unknown](https://user-images.githubusercontent.com/46765712/113368265-4d521080-932c-11eb-9ada-81a9477be75b.png)
+
+
+**4/15: Alvin M** 
+![image](https://user-images.githubusercontent.com/46765712/114950754-bbfd9680-9e21-11eb-8a38-331c309bbd50.png)
+Since the last update, we transitiond into a proper run of the benchmark. originaly we utilized 0x00edd1e's docker variant of the linpack benchmark. The edd1e benchmark was 
+acceptable but the issue was that it calcualted data in KFLOPS, we need our measurement in GFLOPS. since that was the case, i have spent this time modifying the original 
+files and was able to sucessfully redo the original benchmark. As you can see in this branch we have trimmed alot of files from the last update.  I created a file that holds 
+the benchmark itself, the benchmark called "runme_xeon64" has been modified from the origianl variant. We have the choice of running the benchmark on one or two cores, no 
+matter what your selection is it will utilize numactl to bind the cpu cores to the benchmarks. Since the last update i have moved the computing cloud nodes to a rawPC where 
+we have 150 some gb or ram and 40 some cpu cores. this will allow us to run the intended benchmark at the inteded specs. I have also created a basic script where it will 
+install numactl to our node, chmod our benchmark and move the files to our user dir.
+
+Basic manditory commands when setting up benchmarks:
 - mkdir linpack
 - chmod +x /local/repository/install_enableUtil.sh
 - sudo bash /local/repository/install_enableUtil.sh
+
+TLDR:
+- terminated 0x000edd1e benchmark
+- reworked original reserch paper benchmark to our branch
+- transiotined our benchmakr/experment into a rawPC node
+- created basic script to install numactl and to chmod our benchmark
+- created basic script to run our benchmark 
+
+What i hope to finish by 4/22
+- Create the docker file for this benchmark 
+- create and run a docker image of this experment 
