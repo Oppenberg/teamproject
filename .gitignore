@@ -1,0 +1,7 @@
+*.swp
+tmp*log
+*~
+*.o
+*.a
+bin/gups.exe
+Dockerfile
