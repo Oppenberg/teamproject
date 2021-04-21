@@ -41,3 +41,29 @@ What i am working on next:
 - [ ] modify and understand numactl and its attachemnt of cores to benchmark 
 
 
+**4/07: Alvin M** 
+
+I have updated the branch with new scripts and dockerfiles. 
+Docker imagae Creation: 
+- Created two Dockerfiles that are to be executed depending on sockets
+- created a runDocker.sh script to handel the creation of docker image and to run it (./runDocker.sh 1)
+- Since docker blocks some system calls we need to find a work around, We use numactl and that retures a call to memPolicy and that is a blocked sysCall on docker.
+- to circumvent this block we will use the <docker run -ti --privileged ...> command to execute the docker image.
+- Just to reiderate the --privileged command is very dangerous in a normal seeing due to the fact that the image has root privlage so use with caution
+
+Docker run commands: 
+- After running the commands for the setup and creation of the benchmarks run the following commands to execute example
+- <docker build -t stream> this will create an image called linpack that will run the benchmark
+- <docker run -ti --privileged stream> this will run the benchmark
+
+Completed Today:
+
+- this benchmark is one step close to compleation, I have created two docker files that will be executed whe you run the runDocker.sh script. the runDocker.sh script will first ask you 1 or 2 cores (do ./runDocker.sh 1) then it will create a docker image from your choice of core, then run the benchmark with those cores attached, after compeation it will delete itself. I have implementd a script called runAll.sh that will run docker.sh 1 and 2 core, and both 1 and 2 core linux benchmarks 
+
+Updated steps for running the benchmark: 
+- After ssh into node : mkdir stream
+- enable setup script: <chmod +x /local/repository/install_enableUtil.sh>
+- run setup script: <sudo bash /local/repository/install_enableUtil.sh>
+- CD into stream dir
+- run make files: <make all>
+- run benchmark script: <./runAll.sh>
