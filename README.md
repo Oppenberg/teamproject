@@ -79,6 +79,9 @@ Docker run commands:
 - <docker build -t linpack> this will create an image called linpack that will run the benchmark
 - <docker run -ti --privileged linpack> this will run the benchmark
 
+Completed Today:
+- this benchmark is one step close to compleation, I have created two docker files that will be executed whe you run the docker.sh script. the docker.sh script will first ask you 1 or 2 cores (do ./docker.sh 1) then it will create a docker image from your choice of core, then run the benchmark with those cores attached, after compeation (2hr avg) it will delete itself. I have implementd a script called runAll.sh that will run docker.sh 1 and 2 core, and both 1 and 2 core linux benchmarks (avg run time of all 6hr).  
+
 Running the docker image of the benchmark seems to require double the time compared to local linus runtime and it looks like it took a preformacne hit.
 ![image](https://user-images.githubusercontent.com/46765712/115619748-4894d280-a2c2-11eb-8c93-6ece7b9b81f5.png)
 
