@@ -65,6 +65,7 @@ What i hope to finish by 4/22
 
 
 **4/21: Alvin M**
+
 The intention of this update is to document the creation of the docker files for this experment. After creating the docker files for One and two core, i will then try to 
 create a bash script to automate the execution of all 40 benchmarks (local linux and docker images).
 
