@@ -1,0 +1,11 @@
+#getting base image
+FROM ubuntu
+
+MAINTAINER Alvin M
+
+RUN apt-get update
+RUN apt-get install numactl -y
+
+add benchmarks /
+
+CMD numactl --physcpubind=0-31 --interleave=0,1 /runme_xeon64
