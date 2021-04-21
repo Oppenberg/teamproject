@@ -1,5 +1,5 @@
+  
 """An example of constructing a profile with install and execute services. 
-
 Instructions:
 Wait for the profile instance to start, then click on the node in the topology
 and choose the `shell` menu item. The install and execute services are handled
@@ -22,5 +22,4 @@ node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD
 
 # Install and execute scripts on the node. 
 node.addService(rspec.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh")) # Installs docker
-node.addService(rspec.Execute(shell="sudo -i", command="apt install numactl"))
 portal.context.printRequestRSpec()
