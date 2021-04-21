@@ -79,5 +79,9 @@ Docker run commands:
 - <docker build -t linpack> this will create an image called linpack that will run the benchmark
 - <docker run -ti --privileged linpack> this will run the benchmark
 
+Running the docker image of the benchmark seems to require double the time compared to local linus runtime and it looks like it took a preformacne hit.
+![image](https://user-images.githubusercontent.com/46765712/115619748-4894d280-a2c2-11eb-8c93-6ece7b9b81f5.png)
+
+
 
 
