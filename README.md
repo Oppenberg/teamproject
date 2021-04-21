@@ -88,7 +88,7 @@ What i will be doing next:
 - modify the run all script to run each benchmarks a total of 10 time (total 40 runs = 60 hr avg)
 
 Updated steps for how to run benchmarks:
-- After ssh into node : <mkdir linpack>
+- After ssh into node : mkdir linpack
 - enable setup script:  <chmod +x /local/repository/install_enableUtil.sh>
 - run setup script: <sudo bash /local/repository/install_enableUtil.sh>
 - CD into linpack dir
