@@ -64,4 +64,20 @@ What i hope to finish by 4/22
 ![image](https://user-images.githubusercontent.com/46765712/114971805-237c0c00-9e4b-11eb-868e-de8ac1e9e2c4.png)
 
 
+**4/21: Alvin M**
+The intention of this update is to document the creation of the docker files for this experment. After creating the docker files for One and two core, i will then try to 
+create a bash script to automate the execution of all 40 benchmarks (local linux and docker images).
+
+Docker image creation: 
+- created a simple docker script for one socket for testing (located in documentation folder)
+- Since docker blocks some system calls we need to find a work around, We use numactl and that retures a call to memPolicy and that is a blocked sysCall on docker.
+- to circumvent this block we will use the <docker run -ti --privileged ...> command to execute the docker image. 
+- Just to reiderate the --privileged command is very dangerous in a normal seeing due to the fact that the image has root privlage so use with caution 
+
+Docker run commands: 
+- After running the commands for the setup and creation of the benchmarks run the following commands to execute example:
+- <docker build -t linpack> this will create an image called linpack that will run the benchmark
+- <docker run -ti --privileged linpack> this will run the benchmark
+
+
 
