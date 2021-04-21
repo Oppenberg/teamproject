@@ -6,4 +6,7 @@ sudo apt install numactl -y
 make $all
 chmod +x /local/repository/runLocal.sh
 chmod +x /local/repository/runDocker.sh
+chmod +x /local/repository/runAll.sh
+
+
 mv /local/repository/* /users/Am943807/stream
