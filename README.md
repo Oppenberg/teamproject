@@ -65,5 +65,5 @@ Updated steps for running the benchmark:
 - enable setup script: <chmod +x /local/repository/install_enableUtil.sh>
 - run setup script: <sudo bash /local/repository/install_enableUtil.sh>
 - CD into stream dir
-- run make files: <make all>
+- run make files: make all
 - run benchmark script: <./runAll.sh>
