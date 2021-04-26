@@ -1,5 +1,5 @@
 to prepare the database:
-sysbench --test=oltp --oltp-table-size=2000000 --mysql-db=test --mysql-host=arldcn24 --mysql-user=admin --mysql-port=3306 --mysql-password=supervisor prepare
+sysbench --oltp_read_write --oltp-table-size=2000000 --mysql-db=test --mysql-host=arldcn24 --mysql-user=admin --mysql-port=3306 --mysql-password=supervisor prepare
 
 It assumes that mysql is installed and running at port 3306. Hehehehe.
 and the password is supervisor.
