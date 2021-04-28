@@ -1,11 +1,11 @@
 #!/bin/bash
 
 docker pull mintyblot/stream-1:latest
-ocker run -ti --privileged mintyblot/stream-1:latest
+docker run -ti --privileged mintyblot/stream-1:latest
 docker image rm -f mintyblot/stream-1:latest
 
 docker pull mintyblot/stream-2:latest
-ocker run -ti --privileged mintyblot/stream-2:latest
+docker run -ti --privileged mintyblot/stream-2:latest
 docker image rm -f mintyblot/stream-2:latest
 
 cd bin
