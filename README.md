@@ -67,3 +67,16 @@ Updated steps for running the benchmark:
 - CD into stream dir
 - run make files: make all
 - run benchmark script: <./runAll.sh>
+
+**4/07: Alvin M** 
+- This is most likely my last update for this benchmark due to the fact that all executeables and scritps are written and docker images are uploaded onto docker hub. At 
+  this current state we have completed all the requirements for this project.
+  
+List of changes:
+- Uploaded Docker build images to docker hub 
+- https://hub.docker.com/repository/docker/mintyblot/stream-1
+- https://hub.docker.com/repository/docker/mintyblot/stream-2
+- The docker images are of Dockerfile.OneSocket and Dockerfile.TwoSocket 
+- Added a bash script to execute both local benchmarks and both benchmarks from docker hub (images of Local Dockerfile.OneSocket and Dockerfile.TwoSocket but on docker hub )
+- Modified install_enableUtil.sh to first take the name of user and build utilities at that users Dir
+- install_enableUtil.sh will take username, install numactl, enable scripts, mkdir at user, move files to user then make all at dir.
