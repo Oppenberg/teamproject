@@ -12,7 +12,7 @@ chmod +x /local/repository/benchmarks/xlinpack_xeon64
 chmod +x /local/repository/runExpLocal.sh
 chmod +x /local/repository/runDocker.sh
 chmod +x /local/repository/runAll.sh
-chmod +x /local/repository/runAll-Images.sh
+chmod +x /local/repository/runImage.sh
 
 mkdir -p /users/$varname/linpack
 
