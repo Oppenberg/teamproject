@@ -80,3 +80,12 @@ List of changes:
 - Added a bash script to execute both local benchmarks and both benchmarks from docker hub (images of Local Dockerfile.OneSocket and Dockerfile.TwoSocket but on docker hub )
 - Modified install_enableUtil.sh to first take the name of user and build utilities at that users Dir
 - install_enableUtil.sh will take username, install numactl, enable scripts, mkdir at user, move files to user then make all at dir.
+
+How to run:
+- After SSH into node run the following commands 
+- <chmod +x /local/repository/install_enableUtil.sh>
+- <sudo +x /local/repository/install_enableUtil.sh>
+- install_enableUtil.sh will then promt you on your username, case sensetiveExample: Am943807@head -> enter: Am943807)
+- <cd stream>
+- <runAllImage.sh> for docker hub image and local benchmark
+- <runAll.sh> to run/create benchmark from local and local benchmark
