@@ -68,7 +68,7 @@ Updated steps for running the benchmark:
 - run make files: make all
 - run benchmark script: <./runAll.sh>
 
-**4/07: Alvin M** 
+**4/28: Alvin M** 
 - This is most likely my last update for this benchmark due to the fact that all executeables and scritps are written and docker images are uploaded onto docker hub. At 
   this current state we have completed all the requirements for this project.
   
@@ -86,6 +86,6 @@ How to run:
 - <chmod +x /local/repository/install_enableUtil.sh>
 - <sudo +x /local/repository/install_enableUtil.sh>
 - install_enableUtil.sh will then promt you on your username, case sensetiveExample: Am943807@head -> enter: Am943807)
--  <cd stream>
+- cd into stream dir
 - <runAllImage.sh> for docker hub image and local benchmark
 - <runAll.sh> to run/create benchmark from local and local benchmark
