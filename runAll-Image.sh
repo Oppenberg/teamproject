@@ -1,11 +1,11 @@
 #!/bin/bash
 
 docker pull mintyblot/linpack-1:latest
-ocker run -ti --privileged mintyblot/linpack-1:latest
+docker run -ti --privileged mintyblot/linpack-1:latest
 docker image rm -f mintyblot/linpack-1:latest
 
 docker pull mintyblot/linpack-2:latest
-ocker run -ti --privileged mintyblot/linpack-2:latest
+docker run -ti --privileged mintyblot/linpack-2:latest
 docker image rm -f mintyblot/linpack-2:latest
 
 cd benchmarks
