@@ -17,4 +17,5 @@ mkdir -p /users/$varname/stream
 
 mv /local/repository/* /users/$varname/stream
 
-
+cd /users/$varname/stream
+make $all
