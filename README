@@ -1,6 +1,8 @@
 to run 10 instances of mysql sysbench benchmark locally:
 ./run10_ver2.sh
 
+the above benchmark is running the oltp_read_write test
+
 -----old instructions----------------------------------------------------------------------
 to prepare the database:
 sysbench --oltp_read_write --oltp-table-size=2000000 --mysql-db=test --mysql-host=arldcn24 --mysql-user=admin --mysql-port=3306 --mysql-password=supervisor prepare
