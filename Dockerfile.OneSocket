@@ -1,0 +1,12 @@
+#getting base image
+FROM ubuntu
+
+MAINTAINER Alvin M
+
+RUN apt-get update
+RUN apt-get install numactl -y
+RUN  apt-get install libgomp1 -y
+
+ADD bin /
+
+CMD numactl --physcpubind=0-7,16-23 --localalloc /gups.exe
