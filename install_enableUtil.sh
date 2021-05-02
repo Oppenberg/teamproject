@@ -14,7 +14,7 @@ chmod +x /local/repository/runAllImage.sh
 
 mkdir -p /users/$varname/stream
 
-mv /local/repository/* /users/$varname/stream
-
+cp /local/repository/* /users/$varname/stream
 cd /users/$varname/stream
+mkdir bin
 make $all
