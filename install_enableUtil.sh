@@ -14,4 +14,5 @@ mkdir -p /users/$varname/RandomAccess
 
 cp /local/repository/* /users/$varname/RandomAccess
 
+cd RandomAccess
 make $all
