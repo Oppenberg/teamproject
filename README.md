@@ -3,6 +3,8 @@ A Docker container to benchmark the CPU. Make use of PXZ to compress a large fil
 
 This benchmark was designed to compare the CPU performance of Docker with native system.
 
+The test is intended to be run on multiple cores with each core simultaneously compressing a different part of the given file. The end goal is to decrease compression time while maintaining a compression ratio.
+
 Generate the Docker image
 -------------------------
 	make
