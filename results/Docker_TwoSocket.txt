@@ -1,0 +1,334 @@
+latest: Pulling from mintyblot/stream-2
+345e3491a907: Already exists
+57671312ef6f: Already exists
+5e9250ddb7d0: Already exists
+c5d695fabdd6: Pull complete
+559294cd5ba0: Pull complete
+54a9232a4b7f: Pull complete
+a3ec96106534: Pull complete
+Digest: sha256:7411563741fa42b037a903cc9e608d1f809a295c6ec354ccb4cd094cc965f972
+Status: Downloaded newer image for mintyblot/stream-2:latest
+docker.io/mintyblot/stream-2:latest
+Generated on 2021-05-04:02:59:56 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 411599 microseconds.
+   (= 411599 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          43.3701       0.6155       0.6088       0.6234
+Scale:         43.1910       0.6213       0.6113       0.6329
+Add:           45.7481       0.8706       0.8657       0.8763
+Triad:         49.8415       0.7995       0.7946       0.8054
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:00:39 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 409518 microseconds.
+   (= 409518 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          44.7099       0.5978       0.5905       0.6102
+Scale:         44.6909       0.5998       0.5908       0.6104
+Add:           49.6346       0.8069       0.7979       0.8219
+Triad:         49.9343       0.8019       0.7931       0.8092
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:01:21 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 408585 microseconds.
+   (= 408585 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          44.8520       0.5968       0.5887       0.6115
+Scale:         44.4736       0.6012       0.5937       0.6168
+Add:           49.3963       0.8117       0.8018       0.8270
+Triad:         49.8559       0.8026       0.7944       0.8114
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:02:03 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 408192 microseconds.
+   (= 408192 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          43.5618       0.6149       0.6061       0.6223
+Scale:         43.1613       0.6216       0.6117       0.6331
+Add:           45.7757       0.8709       0.8652       0.8755
+Triad:         49.7357       0.8023       0.7963       0.8094
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:02:45 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 412518 microseconds.
+   (= 412518 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          44.8226       0.5945       0.5890       0.6019
+Scale:         44.7409       0.5957       0.5901       0.6036
+Add:           49.6206       0.8065       0.7981       0.8172
+Triad:         49.9362       0.8048       0.7931       0.8194
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:03:27 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 415138 microseconds.
+   (= 415138 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          43.1047       0.6175       0.6125       0.6246
+Scale:         44.7308       0.5967       0.5903       0.6052
+Add:           50.1303       0.8052       0.7900       0.8131
+Triad:         46.2708       0.8695       0.8559       0.8810
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:04:10 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 407865 microseconds.
+   (= 407865 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          43.5206       0.6176       0.6067       0.6222
+Scale:         43.0979       0.6187       0.6126       0.6275
+Add:           45.6969       0.8716       0.8667       0.8822
+Triad:         50.3343       0.8001       0.7868       0.8105
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:04:53 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 410199 microseconds.
+   (= 410199 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          45.1677       0.5956       0.5845       0.6011
+Scale:         44.5978       0.6004       0.5920       0.6130
+Add:           49.8836       0.8024       0.7939       0.8103
+Triad:         49.8928       0.8029       0.7938       0.8135
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:05:35 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 407071 microseconds.
+   (= 407071 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          45.1752       0.5957       0.5844       0.6029
+Scale:         44.7108       0.5979       0.5905       0.6085
+Add:           49.4102       0.8052       0.8015       0.8137
+Triad:         50.0498       0.8001       0.7913       0.8059
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Generated on 2021-05-04:03:06:16 GMT
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 1650163200, Offset = 0
+Total memory required = 36.8840 GiB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Number of Threads requested = 32
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 407040 microseconds.
+   (= 407040 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (GB/s)   Avg time     Min time     Max time
+Copy:          43.0420       0.6194       0.6134       0.6292
+Scale:         43.2446       0.6186       0.6105       0.6236
+Add:           46.0229       0.8712       0.8605       0.8759
+Triad:         50.2982       0.7982       0.7874       0.8087
+-------------------------------------------------------------
+Results Comparison:
+        Expected  : 1153300781250.000000 230660156250.000000 307546875000.000000
+        Observed  : 1153300781250.000000 230660156250.000000 307546875000.000000
+Solution Validates
+-------------------------------------------------------------
+Untagged: mintyblot/stream-2:latest
+Untagged: mintyblot/stream-2@sha256:7411563741fa42b037a903cc9e608d1f809a295c6ec354ccb4cd094cc965f972
+Deleted: sha256:5baaa23e43aaefd77b0266b1bb9095f905815da9ac868609dafaefbdb766fde7
