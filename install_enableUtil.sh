@@ -10,6 +10,7 @@ chmod +x /local/repository/runLocal.sh
 chmod +x /local/repository/runDocker.sh
 chmod +x /local/repository/runAll.sh
 chmod +x /local/repository/runAllImage.sh
+chmod +x /local/repository/demo.sh
 
 
 mkdir -p /users/$varname/stream
