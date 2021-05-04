@@ -1,5 +1,5 @@
 to run 10 instances of mysql sysbench benchmark locally:
-./run10_ver2.sh
+./run10.sh
 
 the above benchmark is running the oltp_read_write test
 
