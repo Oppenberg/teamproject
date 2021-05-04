@@ -24,6 +24,7 @@ now=`date`
 echo "Running linpack, started at $now"
 echo "--------------------------------------------------------------------------------"
 echo "Running linpack, started at $now"
+#To get around docker's block of system calls
 docker run -ti --privileged linpack
 docker image rm -f linpack
 rm -f Dockerfile
