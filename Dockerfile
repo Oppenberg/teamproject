@@ -4,6 +4,22 @@ FROM ubuntu
 MAINTAINER Alyssa (Lyssa) S
 
 RUN apt-get update
+RUN apt-get install -y mysql-server
+RUN apt install -y sysbench
+
+COPY easyStartup.sh /easyStartup.sh
+
+CMD ["/easyStartup.sh"]
+
+------------------------------------------------------------------------------------
+#old version
+
+#getting base image
+FROM ubuntu
+
+MAINTAINER Alyssa (Lyssa) S
+
+RUN apt-get update
 RUN apt-get install mysql-server
 RUN apt install sysbench
 
