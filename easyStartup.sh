@@ -31,3 +31,4 @@ sleep 5
                 --mysql-user=root --mysql-password=supervisor  \
                 --mysql-port=3306 --debug=on --db-driver=mysql \
                 --events=1000 --time=60 --threads=4 cleanup
+                
