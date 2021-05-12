@@ -12,7 +12,8 @@ COPY easyStartup.sh /easyStartup.sh
 CMD ["/easyStartup.sh"]
 
 ------------------------------------------------------------------------------------
-#old version
+#old version, only use the above script
+#script below is kept for documentation purposes only
 
 #getting base image
 FROM ubuntu
