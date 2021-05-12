@@ -14,6 +14,9 @@ To run just one instance of the local benchmark:
    --mysql-port=3306 --debug=on --db-driver=mysql run   
 
 to run the Dockerfile: 
+Docker run as905993/mysql
+
+alternatively: 
 Docker run <image name>
 
 Note: the above benchmark is running the oltp_read_write test
