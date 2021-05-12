@@ -3,7 +3,7 @@
 Team Members 
 - Sean Roberts 
 - Ben Davidheiser
-- Alyssa (Lyssa) Simoni
+- Alyssa (Lisa) Simoni
 - Alvin Mai
 
 Preformace Evaluation 
