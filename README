@@ -7,11 +7,11 @@ to run 10 instances of mysql sysbench benchmark locally:
 
 To run just one instance of the local benchmark:
 1. prepare the database
-   sysbench /usr/share/sysbench/oltp_read_write.lua --mysql-db=mysql --mysql-host=localhost --mysql-user=root --mysql-password=supervisor 
-   --mysql-port=3306 --debug=on --db-driver=mysql prepare
+   sysbench /usr/share/sysbench/oltp_read_write.lua --mysql-db=mysql --mysql-host=localhost 
+   --mysql-user=root --mysql-password=supervisor --mysql-port=3306 --debug=on --db-driver=mysql prepare
 2. run the test
-   sysbench /usr/share/sysbench/oltp_read_write.lua --mysql-db=mysql --mysql-host=localhost --mysql-user=root --mysql-password=supervisor 
-   --mysql-port=3306 --debug=on --db-driver=mysql run   
+   sysbench /usr/share/sysbench/oltp_read_write.lua --mysql-db=mysql --mysql-host=localhost 
+   --mysql-user=root --mysql-password=supervisor --mysql-port=3306 --debug=on --db-driver=mysql run   
 
 to run the Dockerfile: 
 Docker run as905993/mysql
