@@ -9,4 +9,6 @@ How to run:
 - <runAllImage.sh> for docker hub image and local benchmark
 - <runAll.sh> to run/create benchmark from local and local benchmark
 
+
+For project updates Check the updates folder
 ![image](https://user-images.githubusercontent.com/46765712/116833264-4fef9200-ab86-11eb-8057-044c807e225f.png)
