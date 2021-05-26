@@ -1,10 +1,11 @@
 #  Cloud Performance Benchmarking
 
 Team Members 
-- Sean Roberts 
-- Ben Davidheiser
-- Alyssa (Lisa) Simoni
-- Alvin Mai
+- Alvin Mai (Mintyblot)
+- Sean Roberts (Oppenberg)
+- Ben Davidheiser (BenWCU)
+- Alyssa (Lisa) Simoni (Lyssa-S)
+
 
 # Proejct Overview: 
 This git repository conaings the profiles and docker setup scripts for Cloudlab a higher education cloud platform and resouces. The branches of this git repository hold the 
