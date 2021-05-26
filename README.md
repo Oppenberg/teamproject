@@ -8,7 +8,7 @@
 - <runImage.sh> for docker hub image and local benchmark
 - <runAll.sh> to run/create benchmark from local and local benchmark
 
-
+For project updates Check the updates folder
 
 
 
