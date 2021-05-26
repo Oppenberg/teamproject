@@ -1,4 +1,4 @@
-# CSC468Project: Cloud Performance Benchmarking
+#  Cloud Performance Benchmarking
 
 Team Members 
 - Sean Roberts 
